@@ -1,5 +1,6 @@
-# samuel_motorq
+# Samuel MotorQ Submission
 Project for hackathon by motorq on event management system
+Demo link - https://drive.google.com/drive/folders/14VaK3H0fyhKQuiNLlNfKJaK80aaSShav?usp=sharing
 
 ### Steps for starting the project
 1) install all packages - npm install
