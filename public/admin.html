@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <title>Admin Access</title>
+</head>
+
+<body>
+    <nav>
+        <span style="display: flex;">
+            <a href="home.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </span>
+        <span>
+            <h1>Admin Access</h1>
+        </span>
+        <span>
+        </span>
+    </nav>
+
+
+    <section id="nav_oper">
+        <a href="#create_event">Create Event</a>
+        <a href="#modify_event">Modify Event</a>
+        <a href="#delete_event">Delete Event</a>
+    </section>
+
+    
+    <h1 style="margin-top: 150px;">Create Event</h1>
+    <form action="# " id="create_event" name="create_event">
+
+        <div class="form-outline mb-4">
+            <input type="text" name="name" class="form-control form-control-md" placeholder="Event Name" />
+        </div>
+        <div class="form-outline mb-4">
+            <input type="number" name="max_no" class="form-control form-control-md" placeholder="Max Capacity" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Type</h6>
+            <select type="text" name="Type" class="form-control form-control-md text-center" >
+            <option value="Talk">Talk</option>
+            <option value="Workshop">Workshop</option>
+            </select>
+
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Start Date and Time</h6>
+            <input type="date" name="date_start" class="form-control form-control-md" placeholder="Date" />
+            <input type="time" name="time_start" class="form-control form-control-md" placeholder="Time" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Stop Date and Time</h6>
+            <input type="date" name="date_stop" class="form-control form-control-md" placeholder="Date" />
+            <input type="time" name="time_stop" class="form-control form-control-md" placeholder="Time" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Location</h6>
+            <input type="number" name="lat" class="form-control form-control-md" placeholder="Latitude" />
+            <input type="number" name="lon" class="form-control form-control-md" placeholder="Longitude" />
+        </div>
+        <div class="pt-2 mb-4">
+            <button class="btn btn-success btn-lg btn-block" type="button " name="create_eve_btn">
+                Create Event
+            </button>
+        </div>
+
+    </form>
+
+
+    <h1 style="margin-top: 150px;">Modify Event</h1>
+    <form action="# " id="modify_event">
+
+        <div class="form-outline mb-4">
+            <input type="text" id="name " class="form-control form-control-md" placeholder="Event Name" />
+        </div>
+        <div class="form-outline mb-4">
+            <input type="number" id="max_no" class="form-control form-control-md" placeholder="Max Capacity" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Type</h6>
+            <select type="text" id="Type" class="form-control form-control-md text-center" >
+            <option value="Talk">Talk</option>
+            <option value="Workshop">Workshop</option>
+            </select>
+
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Start Date and Time</h6>
+            <input type="date" id="date_start" class="form-control form-control-md" placeholder="Date" />
+            <input type="time" id="time_start" class="form-control form-control-md" placeholder="Time" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Stop Date and Time</h6>
+            <input type="date" id="date_stop" class="form-control form-control-md" placeholder="Date" />
+            <input type="time" id="time_stop" class="form-control form-control-md" placeholder="Time" />
+        </div>
+        <div class="form-outline mb-4">
+            <h6 class="text-center">Location</h6>
+            <input type="number" id="lat" class="form-control form-control-md" placeholder="Latitude" />
+            <input type="number" id="lon" class="form-control form-control-md" placeholder="Longitude" />
+        </div>
+        <div class="pt-2 mb-4">
+            <button class="btn btn-success btn-lg btn-block" type="button" id="modify_eve_btn">
+                Modify Event
+            </button>
+        </div>
+
+    </form>
+
+    <h1 style="margin-top: 150px;">Delete Event</h1>
+    <form action="# " id="delete_event">
+
+        <div id="event_container">
+            
+        </div>
+
+
+    </form>
+
+
+    <script src="crud.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script> -->
+
+</body>
+
+</html>

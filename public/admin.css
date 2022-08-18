@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 0px 15px;
+    padding: 3px 5px;
+}
+
+#nav_oper a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+#nav_oper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    color: #ccc;
+    font-weight: 600;
+    background-color: rgb(232, 28, 28);
+    padding: 5px 5px;
+}
+
+a:hover {
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+body {
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: max(100vh, 100%);
+}
+
+#search_event {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#event_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+#events_container {
+    margin-top: 50px;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.event_card {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 600px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.2s;
+}
+
+.event_card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    font-size: 1.2em;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(44, 168, 252);
+    box-shadow: 0px 1px 50px rgb(132, 247, 203);
+    z-index: 1;
+}
+
+#create_event, #modify_event, #delete_event {
+    border: 1px solid black;
+    padding: 40px 40px;
+    width: 50vw;
+    margin: 0px 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
